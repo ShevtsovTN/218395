@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::as('users.')->group(function () {
 
-    Route::post('/users', [
+    Route::get('/users', [
         UserController::class, 'index'
     ])->name('index');
 });
