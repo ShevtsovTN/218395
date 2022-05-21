@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "e6b006ca-91f8-4c18-9c17-288b9c412337",
+		"name": "test-218395",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16419853"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users?sort[name]=desc&filter[relations][roles][0][value]=cummings.com&filter[relations][roles][0][param]=domain&filter[relations][roles][0][pivot][0][param]=active&filter[relations][roles][0][pivot][0][value]=0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "sort[email]",
+							"value": "desc",
+							"disabled": true
+						},
+						{
+							"key": "sort[name]",
+							"value": "desc"
+						},
+						{
+							"key": "filter[model][0][param]",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "filter[model][0][value]",
+							"value": "Darren Schulist",
+							"disabled": true
+						},
+						{
+							"key": "filter[relations][roles][0][value]",
+							"value": "cummings.com"
+						},
+						{
+							"key": "filter[relations][roles][0][param]",
+							"value": "domain"
+						},
+						{
+							"key": "filter[relations][roles][0][pivot][0][param]",
+							"value": "active"
+						},
+						{
+							"key": "filter[relations][roles][0][pivot][0][value]",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "713084157a9d72b759390b9da0d4b9c8",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
